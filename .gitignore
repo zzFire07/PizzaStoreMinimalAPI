@@ -3,6 +3,9 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+## To launch
+.vscode
+
 # dotenv files
 .env
 
