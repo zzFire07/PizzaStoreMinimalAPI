@@ -33,5 +33,5 @@ steps:
     azureSubscription: 'Azure for Students(ce650a6e-dbdf-418b-97c1-5487bc6abfb2)'
     appType: 'webApp'
     appName: 'minimal-api-pizza'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(System.DefaultWorkingDirectory)/*.zip'
     deploymentMethod: 'auto'
