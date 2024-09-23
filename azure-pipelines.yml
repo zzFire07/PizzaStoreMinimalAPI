@@ -28,7 +28,10 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-#- task: VSTest@2
-#  inputs:
-#    platform: '$(buildPlatform)'
-#    configuration: '$(buildConfiguration)'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure for Students(ce650a6e-dbdf-418b-97c1-5487bc6abfb2)'
+    appType: 'webApp'
+    WebAppName: 'minimal-api-pizza'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
