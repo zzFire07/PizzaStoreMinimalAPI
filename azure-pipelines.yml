@@ -34,4 +34,4 @@ steps:
     azureSubscription: 'Azure for Students(ce650a6e-dbdf-418b-97c1-5487bc6abfb2)'
     appType: 'webApp'
     WebAppName: 'minimal-api-pizza'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/../a/*.zip'
+    packageForLinux: '$(build.artifactStagingDirectory)\WebApp.zip'
